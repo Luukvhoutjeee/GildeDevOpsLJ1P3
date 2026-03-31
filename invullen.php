@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include('db.php'); 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -7,13 +8,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $project = $_POST['project_nummer'];
     $uren = $_POST['aantal_uren'];
     $omschrijving = $_POST['omschrijving'];
+    
     $sql = "INSERT INTO urenregistratie (datum, ov_nummer, project_nummer, aantal_uren, omschrijving) 
             VALUES ('$datum', '$ov', '$project', '$uren', '$omschrijving')";
 
     if (mysqli_query($conn, $sql)) {
-        echo "<p style='color:green;'>Uren succesvol opgeslagen!</p>";
+        
+        $_SESSION['feedback'] = "De uren zijn succesvol opgeslagen!";
+        
+        header("Location: overzicht.php");
+        exit();
     } else {
-        echo "Fout: " . mysqli_error($conn);
+        echo "Fout bij opslaan: " . mysqli_error($conn);
     }
 }
 ?>

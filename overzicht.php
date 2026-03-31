@@ -60,6 +60,17 @@ $result = mysqli_query($conn, $query);
             <button type="submit" class="btn-filter">Filteren</button>
             <a href="overzicht.php" class="btn-reset">Reset</a>
         </form>
+        <?php
+    session_start();
+
+    if (isset($_SESSION['feedback'])) {
+        echo "<p style='color: white; background: green; padding: 10px; border-radius: 5px;'>";
+        echo $_SESSION['feedback'];
+        echo "</p>";
+
+        unset($_SESSION['feedback']);
+    }
+    ?>
     </section>
 
     <main class="overzicht-container">
