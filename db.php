@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pass = ""; 
+$pass = "Gilde123"; 
 $db   = "gilde_devops_uren";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
