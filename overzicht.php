@@ -94,7 +94,7 @@ $result = mysqli_query($conn, $query);
                     ?>
                         <tr>
                             <td><?php echo date('d-m-Y', strtotime($row['Datum'])); ?></td>
-                            <td><strong><?php echo $row['Medewerker']; ?></strong><br><small><?php echo $row['E-mailadres']; ?></small></td>
+                            <td><strong><?php echo $row['Medewerker']; ?></strong></td>
                             <td><span class="badge"><?php echo $row['Project']; ?></span></td>
                             <td class="uren-cel"><?php echo number_format($row['Uren'], 2); ?></td>
                             <td><?php echo $row['Werkzaamheden']; ?></td>
