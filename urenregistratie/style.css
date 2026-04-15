@@ -6,13 +6,13 @@ body {
     line-height: 1.6;
     margin: 0;
     background-color: #DD0069;
-    /* Gilde DevOps Roze */
 }
 
 .container {
     padding: 20px;
     max-width: 800px;
     margin: auto;
+    margin-top: 80px;
     background: #ffffff;
     border-radius: 8px;
     color: #ffffff;
@@ -359,11 +359,6 @@ th:nth-child(5), td:nth-child(5) { width: 45%; }
 
     .nav-spacer {
         display: none; 
-    }
-
-    .overzicht-container {
-        overflow-x: auto; 
-        padding: 15px;
     }
 
     .overzicht-container table {
