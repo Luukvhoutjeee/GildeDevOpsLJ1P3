@@ -325,16 +325,67 @@ th:nth-child(5), td:nth-child(5) { width: 45%; }
 }
 
 /* =========================================
-   MEDIA QUERIES (Mobiel / Desktop)
+   MEDIA QUERIES (Mobiel & Tablet)
    ========================================= */
-@media (min-width: 768px) {
-    nav ul {
-        display: flex;
-        justify-content: center;
+
+@media (max-width: 1024px) {
+    .overzicht-container, .container {
+        max-width: 90%; 
+        margin: 20px auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+        padding: 15px;
     }
 
-    .container {
-        margin-top: 50px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    nav ul {
+        position: static; 
+        transform: none;
+        left: 0;
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin-top: 10px;
+        gap: 5px;
+    }
+
+    nav li a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .nav-spacer {
+        display: none; 
+    }
+
+    .overzicht-container {
+        overflow-x: auto; 
+        padding: 15px;
+    }
+
+    .overzicht-container table {
+        min-width: 600px; 
+    }
+
+    .invullen-container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    input, select, textarea {
+        font-size: 14px; 
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        margin-top: 20px;
     }
 }
