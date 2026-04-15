@@ -10,7 +10,7 @@
     <nav>
         <img src="/Foto's/logo_gilde-solutions.svg" class="logo" alt="Logo Gilde DevOps Solutions" width="200px">
         <ul>
-            <li><a href="/Hoofdpagina/index.php">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="/Invullen/index.php">Uren Invullen</a></li>
             <li><a href="/Overzicht/index.php">Bekijk Overzicht</a></li>
         </ul>
@@ -30,7 +30,7 @@
             </ul>
         </section>
         
-        <a href="invullen.php" class="btn">Start met invullen</a>
+        <a href="/Invullen/index.php" class="btn">Start met invullen</a>
     </main>
 
     <footer class="main-footer">
@@ -44,7 +44,7 @@
             <div class="footer-section">
                 <h3>Snelkoppelingen</h3>
                 <ul>
-                    <li><a href="/Hoofdpagina/index.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="/Invullen/index.php">Uren Invullen</a></li>
                     <li><a href="/Overzicht/index.php">Overzicht</a></li>
                 </ul>

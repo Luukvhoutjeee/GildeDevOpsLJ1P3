@@ -5,15 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Overzicht</title>
-    <link rel="stylesheet" href="../style.css"> </head>
+    <link rel="stylesheet" href="/style.css"> </head>
 
 <body>
     <nav>
         <img src="../Foto's/logo_gilde-solutions.svg" class="logo" alt="Logo Gilde DevOps Solutions" width="200px">
         <ul>
-            <li><a href="../Hoofdpagina/index.php">Home</a></li>
+            <li><a href="../index.php">Home</a></li>
             <li><a href="../Invullen/index.php">Uren Invullen</a></li>
-            <li><a href="index.php">Bekijk Overzicht</a></li>
+            <li><a href="../Overzicht/index.php">Bekijk Overzicht</a></li>
         </ul>
         <div class="nav-spacer"></div>
     </nav>
