@@ -44,11 +44,11 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="roze-tekst"><?php echo htmlspecialchars($datum); ?></td>
-                    <td class="roze-tekst"><?php echo htmlspecialchars($ov); ?></td>
-                    <td class="roze-tekst"><?php echo htmlspecialchars($project); ?></td>
-                    <td class="roze-tekst"><?php echo htmlspecialchars($uren); ?></td>
-                    <td class="roze-tekst"><?php echo htmlspecialchars($omschrijving); ?></td>
+                    <td class="roze-tekst"><?php echo ($datum); ?></td>
+                    <td class="roze-tekst"><?php echo ($ov); ?></td>
+                    <td class="roze-tekst"><?php echo ($project); ?></td>
+                    <td class="roze-tekst"><?php echo ($uren); ?></td>
+                    <td class="roze-tekst"><?php echo ($omschrijving); ?></td>
                 </tr>
             </tbody>
         </table>
