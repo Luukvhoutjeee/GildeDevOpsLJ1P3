@@ -80,7 +80,7 @@ nav li a:hover {
     background-color: #00365E;
     color: white;
     padding: 40px 0;
-    margin-top: 100px; 
+    margin-top: 100px;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
@@ -216,7 +216,7 @@ textarea {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.overzicht-container h1{
+.overzicht-container h1 {
     color: #00365E;
     text-align: center;
     padding-bottom: 10px;
@@ -248,16 +248,35 @@ textarea {
     border-bottom: 1px solid #ddd;
     font-size: 16px;
     font-weight: 500;
-    word-wrap: break-word; 
-    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     white-space: normal;
 }
 
-th:nth-child(1), td:nth-child(1) { width: 15%; }
-th:nth-child(2), td:nth-child(2) { width: 15%; } 
-th:nth-child(3), td:nth-child(3) { width: 15%; }
-th:nth-child(4), td:nth-child(4) { width: 10%; }
-th:nth-child(5), td:nth-child(5) { width: 45%; } 
+th:nth-child(1),
+td:nth-child(1) {
+    width: 15%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 15%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 15%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 10%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 45%;
+}
 
 .overzicht-container tr:hover td {
     background-color: #f9f9f9;
@@ -311,8 +330,10 @@ th:nth-child(5), td:nth-child(5) { width: 45%; }
 /* MEDIA QUERIES (Mobiel & Tablet) */
 
 @media (max-width: 1024px) {
-    .overzicht-container, .container {
-        max-width: 90%; 
+
+    .overzicht-container,
+    .container {
+        max-width: 90%;
         margin: 20px auto;
         padding: 20px;
     }
@@ -320,15 +341,15 @@ th:nth-child(5), td:nth-child(5) { width: 45%; }
 
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; 
+        flex-direction: column;
         padding: 15px;
     }
 
     nav ul {
-        position: static; 
+        position: static;
         transform: none;
         left: 0;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: center;
         margin-top: 10px;
         gap: 5px;
@@ -340,11 +361,11 @@ th:nth-child(5), td:nth-child(5) { width: 45%; }
     }
 
     .nav-spacer {
-        display: none; 
+        display: none;
     }
 
     .overzicht-container table {
-        min-width: 600px; 
+        min-width: 600px;
     }
 
     .invullen-container {
@@ -353,8 +374,10 @@ th:nth-child(5), td:nth-child(5) { width: 45%; }
         padding: 20px;
     }
 
-    input, select, textarea {
-        font-size: 14px; 
+    input,
+    select,
+    textarea {
+        font-size: 14px;
     }
 
     .footer-content {
